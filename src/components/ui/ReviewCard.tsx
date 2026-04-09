@@ -1,10 +1,5 @@
+import { ReviewCardProps } from "@/types";
 import Image from "next/image";
-
-type ReviewCardProps = {
-  name: string;
-  image: string;
-  review: string;
-};
 
 const ReviewCard = ({ name, image, review }: ReviewCardProps) => {
   return (

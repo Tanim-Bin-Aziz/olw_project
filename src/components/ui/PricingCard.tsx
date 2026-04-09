@@ -1,14 +1,7 @@
 "use client";
 
-import { PricingPlan } from "@/types";
+import { PricingCardProps } from "@/types";
 import { Check, X } from "lucide-react";
-
-type PricingCardProps = {
-  plan: PricingPlan;
-  isYearly: boolean;
-  isRecommended: boolean;
-  isHovered: boolean;
-};
 
 const PricingCard = ({
   plan,

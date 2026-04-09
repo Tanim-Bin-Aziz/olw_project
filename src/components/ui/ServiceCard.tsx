@@ -1,10 +1,5 @@
+import { ServiceCardProps } from "@/types";
 import Image from "next/image";
-
-type ServiceCardProps = {
-  title: string;
-  description: string;
-  image: string;
-};
 
 const ServiceCard = ({ title, description, image }: ServiceCardProps) => {
   return (

@@ -1,9 +1,5 @@
+import { LogoGridCardProps } from "@/types";
 import Image from "next/image";
-
-type LogoGridCardProps = {
-  name: string;
-  image: string;
-};
 
 const LogoGridCard = ({ name, image }: LogoGridCardProps) => {
   return (

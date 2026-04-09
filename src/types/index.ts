@@ -77,3 +77,35 @@ export type FooterLinkGroup = {
     href: string;
   }[];
 };
+export type AccordionItemProps = {
+  question: string;
+  answer: string;
+  isOpen: boolean;
+  onClick: () => void;
+};
+export type LogoGridCardProps = {
+  name: string;
+  image: string;
+};
+export type PricingCardProps = {
+  plan: PricingPlan;
+  isYearly: boolean;
+  isRecommended: boolean;
+  isHovered: boolean;
+};
+export type ReviewCardProps = {
+  name: string;
+  image: string;
+  review: string;
+};
+
+export type ServiceCardProps = {
+  title: string;
+  description: string;
+  image: string;
+};
+export type StepCardProps = {
+  id: string;
+  title: string;
+  image: string;
+};

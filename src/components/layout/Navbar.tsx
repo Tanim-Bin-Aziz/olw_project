@@ -85,10 +85,20 @@ const Navbar = () => {
         <div className="ml-auto hidden lg:block">
           <Link
             href="#contact"
-            className="inline-flex h-[40px] items-center justify-center gap-2 rounded-[4px] bg-[#F43F6D] px-5 text-[14px] font-semibold text-white transition-colors duration-200 hover:bg-[#EA2D5D]"
+            onClick={handleMobileMenuClose}
+            className="hero-btn inline-flex h-11 items-center justify-center gap-2 overflow-hidden rounded-[4px] bg-[#F43F6D] px-5 text-[14px] font-semibold text-white transition-all duration-300 ease-out hover:-translate-y-[2px] hover:bg-[#EA2D5D] hover:shadow-[0_14px_30px_rgba(244,63,109,0.28)]"
           >
             <span>Schedule A Meeting</span>
-            <ArrowRight className="size-[14px]" strokeWidth={2.25} />
+
+            <span className="relative flex h-[14px] w-[14px] items-center justify-center overflow-hidden">
+              <span className="hero-arrow-first absolute inset-0 flex items-center justify-center">
+                <ArrowRight className="size-[14px]" strokeWidth={2.25} />
+              </span>
+
+              <span className="hero-arrow-second absolute inset-0 flex items-center justify-center">
+                <ArrowRight className="size-[14px]" strokeWidth={2.25} />
+              </span>
+            </span>
           </Link>
         </div>
 

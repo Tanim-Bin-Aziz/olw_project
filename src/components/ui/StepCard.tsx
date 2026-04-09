@@ -1,10 +1,5 @@
+import { StepCardProps } from "@/types";
 import Image from "next/image";
-
-type StepCardProps = {
-  id: string;
-  title: string;
-  image: string;
-};
 
 const StepCard = ({ id, title, image }: StepCardProps) => {
   return (

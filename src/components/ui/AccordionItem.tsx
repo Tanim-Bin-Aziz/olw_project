@@ -1,13 +1,7 @@
 "use client";
 
+import { AccordionItemProps } from "@/types";
 import { Minus, Plus } from "lucide-react";
-
-type AccordionItemProps = {
-  question: string;
-  answer: string;
-  isOpen: boolean;
-  onClick: () => void;
-};
 
 const AccordionItem = ({
   question,
