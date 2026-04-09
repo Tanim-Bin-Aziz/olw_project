@@ -1,66 +1,15 @@
 import Image from "next/image";
-
-const brands = [
-  {
-    name: "airbnb",
-    src: "/images/brands/airbnb.svg",
-    alt: "Airbnb",
-    width: 120,
-    height: 36,
-  },
-  {
-    name: "booking",
-    src: "/images/brands/booking.svg",
-    alt: "Booking.com",
-    width: 170,
-    height: 40,
-  },
-  {
-    name: "vrbo",
-    src: "/images/brands/vrbo.svg",
-    alt: "Vrbo",
-    width: 150,
-    height: 40,
-  },
-  {
-    name: "tripadvisor",
-    src: "/images/brands/trip.svg",
-    alt: "Tripadvisor",
-    width: 170,
-    height: 40,
-  },
-  {
-    name: "agoda",
-    src: "/images/brands/agoda.svg",
-    alt: "Agoda",
-    width: 130,
-    height: 40,
-  },
-  {
-    name: "expedia",
-    src: "/images/brands/expedia.svg",
-    alt: "Expedia",
-    width: 150,
-    height: 40,
-  },
-  {
-    name: "hometogo",
-    src: "/images/brands/home.svg",
-    alt: "HomeToGo",
-    width: 120,
-    height: 42,
-  },
-];
-
-const marqueeBrands = [...brands, ...brands];
+import brandsContent, { brands } from "@/data/brands";
 
 const TrustedBrands = () => {
+  const marqueeBrands = [...brands, ...brands];
+
   return (
-    <section className="bg-[#f5f5f5] py-14">
+    <section id="trusted-brands" className="bg-[#f5f5f5] py-14">
       <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-8">
         <div className="rounded-[28px] bg-[#f1f1f1] py-8">
           <h2 className="text-center text-[22px] font-semibold text-[#111111] sm:text-[26px]">
-            Trusted by leaders in 50+ industries
+            {brandsContent.title}
           </h2>
 
           <div className="relative mt-8 overflow-hidden rounded-[20px] bg-[#ebebeb] py-6">
