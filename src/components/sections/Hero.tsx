@@ -201,7 +201,7 @@ const Hero = () => {
 
             <div className="hero-text-load hero-text-delay-4 mt-12 flex flex-col items-center gap-8">
               <Link
-                href="/contact"
+                href="#contact"
                 className="hero-btn group inline-flex h-[60px] items-center justify-center gap-2 overflow-hidden rounded-[6px] bg-[#F43F6D] px-8 text-[16px] font-semibold text-white transition-all duration-300 ease-out hover:-translate-y-[2px] hover:bg-[#EA2F60] hover:shadow-[0_14px_30px_rgba(244,63,109,0.28)]"
               >
                 <span>Schedule A Meeting</span>
@@ -218,7 +218,7 @@ const Hero = () => {
               </Link>
 
               <Link
-                href="/pricing"
+                href="#pricing"
                 className="group relative inline-block text-[16px] font-medium text-[#111111] transition-opacity duration-200 hover:opacity-70"
               >
                 <span>See Pricing</span>

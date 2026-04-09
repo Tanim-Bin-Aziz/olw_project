@@ -8,11 +8,11 @@ import { ArrowRight, Menu, X } from "lucide-react";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Blog", href: "/blog" },
-  { label: "Resources", href: "/resources" },
+  { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "Blog", href: "#blog" },
+  { label: "Resources", href: "#resources" },
 ];
 
 const isActivePath = (pathname: string, href: string) => {
@@ -84,7 +84,7 @@ const Navbar = () => {
 
         <div className="ml-auto hidden lg:block">
           <Link
-            href="/contact"
+            href="#contact"
             className="inline-flex h-[40px] items-center justify-center gap-2 rounded-[4px] bg-[#F43F6D] px-5 text-[14px] font-semibold text-white transition-colors duration-200 hover:bg-[#EA2D5D]"
           >
             <span>Schedule A Meeting</span>
@@ -135,7 +135,7 @@ const Navbar = () => {
           </nav>
 
           <Link
-            href="/contact"
+            href="#contact"
             onClick={handleMobileMenuClose}
             className="mt-4 inline-flex h-11 items-center justify-center gap-2 rounded-[4px] bg-[#F43F6D] px-5 text-[14px] font-semibold text-white transition-colors duration-200 hover:bg-[#EA2D5D]"
           >
