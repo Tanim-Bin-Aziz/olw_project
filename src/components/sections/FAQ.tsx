@@ -6,14 +6,14 @@ import faqs from "@/data/faqs";
 import AccordionItem from "@/components/ui/AccordionItem";
 
 const FAQ = () => {
-  const [openId, setOpenId] = useState<number>(1);
+  const [openId, setOpenId] = useState<number>(3);
 
   const handleToggle = (id: number) => {
     setOpenId((prev) => (prev === id ? 0 : id));
   };
 
   return (
-    <section className="bg-[#f7f7f7] px-4 py-10 md:px-6 md:py-12">
+    <section id="faq" className="bg-[#f7f7f7] px-4 py-10 md:px-6 md:py-12">
       <div className="mx-auto max-w-[1280px]">
         <div className="rounded-[24px] bg-[#f9f9f9] px-6 py-10 md:px-10 md:py-12 lg:px-16">
           <div className="text-center">
@@ -26,7 +26,7 @@ const FAQ = () => {
             </p>
           </div>
 
-          <div className="mx-auto mt-12 max-w-[980px]">
+          <div className="mx-auto mt-12 max-w-[1045px]">
             {faqs.map((faq) => (
               <AccordionItem
                 key={faq.id}
@@ -40,10 +40,10 @@ const FAQ = () => {
         </div>
 
         <div className="mt-4 rounded-[24px] bg-[#f9f9f9] px-6 py-10 text-center md:px-10 md:py-12">
-          <div className="mx-auto flex w-fit items-center">
-            <div className="relative h-10 w-[86px]">
+          <div className="flex justify-center">
+            <div className="relative h-[52px] w-[120px] md:h-[58px] md:w-[136px]">
               <Image
-                src="/images/faqs/Avatar Group.svg"
+                src="/images/faqs/Avatar group.svg"
                 alt="Team avatars"
                 fill
                 className="object-contain"
@@ -60,7 +60,7 @@ const FAQ = () => {
             our friendly team.
           </p>
 
-          <button className="mt-6 rounded-[8px] bg-[#ff4f87] px-6 py-3 text-sm font-medium text-white transition duration-300 hover:bg-[#e63f77]">
+          <button className="mt-6 inline-flex items-center justify-center rounded-[8px] bg-[#ff4f87] px-6 py-3 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#e63f77] hover:shadow-[0_14px_30px_rgba(255,79,135,0.28)] active:translate-y-0">
             Get in touch
           </button>
         </div>
