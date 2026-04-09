@@ -24,3 +24,31 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.trusted-brands-marquee {
+  animation: trusted-brands-scroll 24s linear infinite;
+}
+
+.trusted-brands-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes trusted-brands-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 640px) {
+  .trusted-brands-marquee {
+    animation-duration: 18s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trusted-brands-marquee {
+    animation: none;
+  }
+}
