@@ -52,3 +52,264 @@ body {
     animation: none;
   }
 }
+.hero-badge {
+  transform: rotate(var(--badge-rotate));
+  transform-origin: center;
+  animation:
+    heroBadgePop 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both,
+    heroBadgeFloat var(--badge-duration) ease-in-out infinite;
+  animation-delay: var(--badge-delay), calc(var(--badge-delay) + 0.9s);
+  will-change: transform, opacity;
+}
+
+.hero-dot {
+  animation:
+    heroDotPop 0.8s cubic-bezier(0.22, 1, 0.36, 1) both,
+    heroDotFloat var(--dot-duration) ease-in-out infinite;
+  animation-delay: var(--dot-delay), calc(var(--dot-delay) + 0.8s);
+  will-change: transform, opacity;
+}
+
+@keyframes heroBadgePop {
+  0% {
+    opacity: 0;
+    transform: translateY(28px) scale(0.72) rotate(var(--badge-rotate));
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-6px) scale(1.05) rotate(var(--badge-rotate));
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(var(--badge-rotate));
+  }
+}
+
+@keyframes heroBadgeFloat {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(var(--badge-rotate));
+  }
+  25% {
+    transform: translate3d(0, -8px, 0)
+      rotate(calc(var(--badge-rotate) - 1.5deg));
+  }
+  50% {
+    transform: translate3d(4px, -14px, 0) rotate(var(--badge-rotate));
+  }
+  75% {
+    transform: translate3d(-3px, -7px, 0)
+      rotate(calc(var(--badge-rotate) + 1.5deg));
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(var(--badge-rotate));
+  }
+}
+
+@keyframes heroDotPop {
+  0% {
+    opacity: 0;
+    transform: translateY(18px) scale(0.45);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-3px) scale(1.08);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes heroDotFloat {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(0, -5px, 0);
+  }
+  50% {
+    transform: translate3d(3px, -9px, 0);
+  }
+  75% {
+    transform: translate3d(-2px, -4px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.hero-badge {
+  transform: rotate(var(--badge-rotate));
+  transform-origin: center;
+  animation:
+    heroBadgePop 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both,
+    heroBadgeFloat var(--badge-duration) ease-in-out infinite;
+  animation-delay: var(--badge-delay), calc(var(--badge-delay) + 0.9s);
+  will-change: transform, opacity;
+}
+
+.hero-dot {
+  animation:
+    heroDotPop 0.8s cubic-bezier(0.22, 1, 0.36, 1) both,
+    heroDotFloat var(--dot-duration) ease-in-out infinite;
+  animation-delay: var(--dot-delay), calc(var(--dot-delay) + 0.8s);
+  will-change: transform, opacity;
+}
+
+.hero-text-load {
+  opacity: 0;
+  animation: heroTextReveal 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  will-change: transform, opacity;
+}
+
+.hero-text-delay-1 {
+  animation-delay: 0.15s;
+}
+
+.hero-text-delay-2 {
+  animation-delay: 0.3s;
+}
+
+.hero-text-delay-3 {
+  animation-delay: 0.45s;
+}
+
+.hero-text-delay-4 {
+  animation-delay: 0.6s;
+}
+
+/* optional reusable section fade-in */
+.section-fade-in {
+  opacity: 0;
+  animation: sectionFadeIn 0.8s ease forwards;
+  animation-delay: 0.12s;
+  will-change: transform, opacity;
+}
+
+@keyframes heroBadgePop {
+  0% {
+    opacity: 0;
+    transform: translateY(28px) scale(0.72) rotate(var(--badge-rotate));
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-6px) scale(1.05) rotate(var(--badge-rotate));
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(var(--badge-rotate));
+  }
+}
+
+@keyframes heroBadgeFloat {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(var(--badge-rotate));
+  }
+  25% {
+    transform: translate3d(0, -8px, 0)
+      rotate(calc(var(--badge-rotate) - 1.5deg));
+  }
+  50% {
+    transform: translate3d(4px, -14px, 0) rotate(var(--badge-rotate));
+  }
+  75% {
+    transform: translate3d(-3px, -7px, 0)
+      rotate(calc(var(--badge-rotate) + 1.5deg));
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(var(--badge-rotate));
+  }
+}
+
+@keyframes heroDotPop {
+  0% {
+    opacity: 0;
+    transform: translateY(18px) scale(0.45);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-3px) scale(1.08);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes heroDotFloat {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(0, -5px, 0);
+  }
+  50% {
+    transform: translate3d(3px, -9px, 0);
+  }
+  75% {
+    transform: translate3d(-2px, -4px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes heroTextReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sectionFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-btn:hover .hero-arrow-first {
+  animation: arrowOutOnce 0.38s ease forwards;
+}
+
+.hero-btn:hover .hero-arrow-second {
+  animation: arrowInOnce 0.38s ease forwards;
+}
+
+.hero-arrow-first {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hero-arrow-second {
+  opacity: 0;
+  transform: translateX(-14px);
+}
+
+@keyframes arrowOutOnce {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(14px);
+  }
+}
+
+@keyframes arrowInOnce {
+  0% {
+    opacity: 0;
+    transform: translateX(-14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
