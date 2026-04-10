@@ -5,8 +5,8 @@ The main goal was to convert the provided Figma design into a clean, accurate, a
 
 ## Live Demo
 
-- **Live Site:** [YOUR_LIVE_LINK](https://olw-project.vercel.app)
-- **GitHub Repository:** [YOUR_GITHUB_REPO_LINK](https://github.com/Tanim-Bin-Aziz/olw_project)
+- **Live Site:** [Live_Link](https://olw-project.vercel.app)
+- **GitHub Repository:** [GitHub_Repo_Link](https://github.com/Tanim-Bin-Aziz/olw_project)
 
 ## Figma Design
 
